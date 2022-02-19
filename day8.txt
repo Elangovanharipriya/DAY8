@@ -1,0 +1,98 @@
+1.https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+ANS:
+class Movie{
+    constructor(title,studio,rating)
+    {
+        this.Title  =title;
+        this.Studio =studio;
+        this.Rating =rating;
+    }
+    
+    getData(){
+        return `
+        Title  :${this.Title}  
+        Studio :${this.Studio}
+        Rating :${this.Rating} 
+        `;
+        
+      }
+}
+
+let obj = new Movie ("Casino Royale","Eon Productions","PG­13");
+console.log(obj.getData());
+
+Title  :Casino Royale  
+        
+Studio :Eon Productions
+        
+Rating :PG­13
+
+2.https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+ANS:
+class Circle{
+    constructor(radius,color)
+        {
+          this.radius =radius;
+          this.color =color;
+        }
+
+     getRadius(){
+        return `
+        radius :${this.radius} 
+        color :${this.color}`;
+}
+}
+let obj = new Circle ("1.0","red");
+console.log(obj.getRadius());
+
+OUTPUT
+radius :1.0 
+        color :red
+
+3.Write a “person” class to hold all the details.
+ANS:
+class Person{
+    
+    constructor(first,last,age)
+    {
+        this.firstname =first;
+        this.lastname =last;
+        this.age =age;
+        
+    }
+    greeting()
+    {
+        return `Hello ${this.firstname},${this.lastname},${this.age}`;
+    }
+
+     Companyname()
+     {
+         return `${this.CompanyName}`;
+     }
+}
+    let obj =new Person ("joh","kumar","18");
+    
+    console.log(obj.greeting());
+ANS:Hello joh,kumar,18
+    
+
+
+
+4.write a class to calculate uber price.
+ANS:
+class Car{
+  let
+      constructor(distance,time)
+           {
+             this.distance =distance;
+             this.speed=time;
+           }
+       getRate(){ 
+         return this.distance / this.time
+        }
+  }
+  let obj = new Car (24,4);
+  console.log(obj.getRate();
+output:
+6
+
